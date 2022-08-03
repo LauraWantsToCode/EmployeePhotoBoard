@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box; 
+    margin: 0px;
+    font-family: Tahoma,Verdana,Segoe,sans-serif; 
+}
+
+/* change text to Tahoma */
+
+body {
+    background-image: url(./Photo/Background\ image.jpg);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo {
+    max-width: 10%;
+    min-width: 100px;
+}
+
+.explainedMarking {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explanation {
+    width: 60px;
+    height: 50px;
+    margin: 6px;
+}
+
+.title {
+    margin: 2%;
+    text-align: center;     
+}
+
+p {
+    font-size: 10px;
+}
+
+.employeeName {
+    font-weight: bold;
+}
+
+#ContainerOfContainers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.TeamContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 3px;
+    flex-direction: column
+}
+
+.TeamName {
+    flex-grow: ;
+    text-align: center;
+}
+
+.EmployeesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Employee-item {
+justify-content: space-between;
+text-align: center;
+padding: 5px;
+}
+
+.SLT {
+    border: 4px solid green;
+}
+
+.PAT {
+    border: 4px solid turquoise; 
+}
+
+.EMP {
+    border: 4px solid purple;
+}
+
+.Employee-item img {
+    height: 90px;
+    width: 80px;
+}
+
+@media print {
+
+    .top { 
+        display: none;
+    }
+
+    body{
+        background-image: none;
+        width: 21cm;
+        height: 29.7cm;
+        margin-bottom: 3cm;
+   } 
+
+.printing {
+    margin: 15mm;
+}
+} 
